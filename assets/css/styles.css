@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(35deg, #281821 0%, #2c2b3e 100%);
+    font-family: 'Nunito', sans-serif;
+    color: #e8efef;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e8efef;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: --#e8efef;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #5e95f8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #e8efef;
+}
+
+.projecty-logo {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.projecty-logo img {
+    height: 10rem;
+    margin-top: 0;
+}
+
+
+.projecty-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.projecty-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.projecty-menu li a {
+    color: #e8efef;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.projecty-menu li a:hover {
+    color: #5e95f8;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #37425d, #8ab6ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.featured-projects {
+    padding: 3rem 0;
+}
+
+.featured-projects h2 {
+    text-align: center;
+    background: linear-gradient(to right, #458ff5, #d481f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #1c131e;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(94, 149, 248, 0.2);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #5e95f8;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+}
+
+
+.projecty-footer {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: -10%;
+    }
+
+    .featured-projects h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+}
